@@ -3,7 +3,7 @@ import React from "react";
 function Experience() {
   return (
     <div>
-      <div className="border-b border-neutral-900 pb-4">
+      <div className="border-b border-neutral-900 pb-4" id="experience">
         <h2 className="my-20 text-center text-4xl" style={{ opacity: 1, transform: "none", willChange: "auto" }}>
           Work Experience
         </h2>
