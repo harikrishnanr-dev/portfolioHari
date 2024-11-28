@@ -75,7 +75,7 @@ const Projects = () => {
             {projectOpen && selectedProject && (
                 <div className=" fixed inset-0 flex items-center justify-center z-50 bg-gray-800 bg-opacity-90 p-5">
 
-                    <div className="bg-gray-900 w-full max-w-2xl rounded-lg shadow-lg p-5">
+                    <div className="bg-black w-full max-w-2xl rounded-lg shadow-lg p-5">
                         <div className="flex justify-end mb-5 ">
                             <button onClick={() => setProjectOpen(false)} className="text-white"><X size={32} /></button>
                         </div>
@@ -83,8 +83,8 @@ const Projects = () => {
                         <h1 className="mt-5 text-2xl">{selectedProject.title}</h1>
                         <p className="text-neutral-400 mt-2 text-justify">{selectedProject.description}</p>
                         <div className="flex space-x-5 mt-5">
-                            <a href={selectedProject.github} target="_blank" className="w-1/2 bg-gray-800 hover:bg-violet-700 text-gray-100 font-semibold py-2 px-4 border border-gray-400 rounded text-center">View Code</a>
-                            <a href={selectedProject.live} target="_blank" className="w-1/2 bg-gray-800 hover:bg-violet-700 text-gray-100 font-semibold py-2 px-4 border border-gray-400 rounded text-center">Demo</a>
+                            {/* <a href={selectedProject.github} target="_blank" className="w-1/2 bg-gray-800 hover:bg-violet-700 text-gray-100 font-semibold py-2 px-4 border border-gray-400 rounded text-center">View Code</a> */}
+                            <a href={selectedProject.live} target="_blank" className="w-full bg-gray-800 hover:bg-violet-700 text-gray-100 font-semibold py-2 px-4 border border-gray-400 rounded text-center">Demo</a>
                         </div>
                     </div>
                 </div>

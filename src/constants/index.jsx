@@ -75,11 +75,6 @@ export const skills = [
       },
       
       {
-        name: "MySQL",
-        image:
-          "https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg",
-      },
-      {
         name: "MongoDB",
         image:
           "https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg",
@@ -253,7 +248,7 @@ export const experiences = [
   {
     role: "MERN Stack Development Intern",
     company: "Luminar Technolab",
-    duration: "April 2024 - Present",
+    duration: "April 2024 - November 2024",
     location: "Kochi, Kerala",
     responsibilities: [
       "Crafted web applications using React.js, ensuring seamless interaction with REST APIs through Axios, serving over 500 daily users.",
@@ -266,3 +261,16 @@ export const experiences = [
 ];
 
 
+export const education = [
+  {
+    role: "Bachelor of Science in Computer Science",
+    company: "STAS Edappally College",
+    duration: "2018 - 2021", 
+    location: "Kerala, India",
+    responsibilities: [
+      "Studied core computer science subjects including Data Structures, Algorithms, and Software Development.",
+      "Completed projects in web development",
+    ],
+    skills: ["HTML", "CSS", "JavaScript", "Php","Python", "C++", "C"],
+  },
+];

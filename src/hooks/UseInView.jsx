@@ -1,6 +1,6 @@
 import { useEffect, useState, useRef } from "react";
 
-const UseInView = (options = { threshold: 0.3 }) => {
+const UseInView = (options = { threshold: 0.3}) => {
   const ref = useRef(null);
   const [inView, setInView] = useState(false);
 
