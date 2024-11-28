@@ -16,13 +16,13 @@ const Hero = () => {
                     Hello, I'm<br />
                     <span className="bg-gradient-to-r from-orange-500 to-orange-800 text-transparent bg-clip-text">Harikrishnan</span>
                 </motion.h1>
-                <p className="mt-10 text-base text-neutral-500 max-w-4xl  px-6 md:px-0 md:text-justify">
+                <p className="mt-2 md:mt-10 text-base text-neutral-500 max-w-4xl  p-5 md:px-0 text-justify">
                     I am a passionate full-stack developer with a strong focus on building robust and scalable web applications. With 6 months of hands-on experience, I have sharpened my skills in front-end technologies like React and back-end technologies such as Node.js, MySQL, and MongoDB.
                     My goal is to leverage my expertise to create innovative solutions that drive business growth and deliver exceptional user experiences.
                 </p>
 
 
-                <div className="flex md:justify-start justify-center my-10">
+                <div className="flex md:justify-start justify-center my-4 md:my-10">
                     <motion.a
                         ref={ref}
                         initial={{ opacity: 0, y: -30 }}

@@ -250,3 +250,30 @@ export const projects = [
 ];
 
 
+export const experiences = [
+  {
+    role: "MERN Stack Development Intern",
+    company: "Luminar Technolab",
+    duration: "April 2024 - Present",
+    location: "Kochi, Kerala",
+    responsibilities: [
+      "Crafted web applications using React.js, ensuring seamless interaction with REST APIs through Axios, serving over 500 daily users.",
+      "Enhanced application performance and security by integrating JWT for user authentication, reducing security incidents by 30%.",
+      "Implemented responsive design principles to ensure the application functions well on both desktop and mobile devices.",
+    ],
+    skills: ["React.js", "Axios", "JWT", "Responsive Design"],
+  },
+  {
+    role: "Software Developer Engineer",
+    company: "Open Sense Labs",
+    duration: "July 2023 - Present",
+    location: "Remote",
+    responsibilities: [
+      "Spearheaded front-end development efforts within a collaborative team environment.",
+      "Implemented backend logic to optimize data processing, reducing response times by 25%.",
+    ],
+    skills: ["JavaScript", "React.js", "Next.js", "Node.js", "MongoDB"],
+  },
+];
+
+
