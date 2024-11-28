@@ -13,21 +13,21 @@ const Projects = () => {
     };
 
     return (
-        <div className="lg:p-0 font-medium p-14" id="projects">
+        <div className="md:p-0 font-medium p-5" id="projects">
         <motion.h2
             ref={ref}
             initial={{ opacity: 0, y: -30 }}
             animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: -30 }}
             transition={{ duration: 1, ease: "linear" }}
-            className="text-3xl sm:text-5xl lg:text-6xl text-center tracking-wider"
+            className="text-3xl sm:text-5xl md:text-6xl text-center tracking-wider"
         >
             Projects
         </motion.h2>
-        <div className="flex flex-wrap sm:p-8 lg:p-0 mt-5">
+        <div className="flex flex-wrap sm:p-8 md:p-0 mt-5">
             {projects.map((project, index) => (
                 <motion.div
                     key={index}
-                    className="w-full sm:w-1/2 lg:w-1/3 p-2"
+                    className="w-full sm:w-1/2 md:w-1/3 p-2"
                     initial={{ x: -100 }}  // Start from the right (side view)
                     animate={{ x: 0 }}  // Move to its original position
                     exit={{ x: 100 }}  // Exit to the left (side view)

@@ -4,16 +4,16 @@ function Experience() {
   return (
     <div>
       <div className="border-b border-neutral-900 pb-4" id="experience">
-        <h2 className="my-20 text-center text-4xl" style={{ opacity: 1, transform: "none", willChange: "auto" }}>
+        <h2 className="md:my-20 my-2 text-center text-4xl" style={{ opacity: 1, transform: "none", willChange: "auto" }}>
           Work Experience
         </h2>
 
         <div>
-          <div className="mb-8 flex flex-wrap lg:justify-center gap-4">
-            <div className="w-full lg:w-1/4" style={{ opacity: 1, transform: "none", willChange: "auto" }}>
-              <p className="mb-2 text-sm text-neutral-400">April 2024 - November 2024</p>
+          <div className="mb-8 flex flex-wrap md:justify-center gap-2 md:p-0 p-5">
+            <div className="w-full md:w-1/4" style={{ opacity: 1, transform: "none", willChange: "auto" }}>
+              <p className="mb-2 md:text-sm text-neutral-400">April 2024 - November 2024</p>
             </div>
-            <div className="w-full max-w-xl lg:w-3/4" style={{ opacity: 1, transform: "none", willChange: "auto" }}>
+            <div className="w-full max-w-xl md:w-3/4" style={{ opacity: 1, transform: "none", willChange: "auto" }}>
               <h6 className="mb-2 font-semibold">
                 MERN Stack Development Intern - 
                 <span className="text-sm text-purple-100">Luminar Technolab</span>

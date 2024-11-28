@@ -9,12 +9,12 @@ const Skills = () => {
   return (
     <motion.div
       ref={ref}
-      className="lg:mt-5 lg:p-0 font-medium p-8">
+      className="md:mt-5 md:p-0 font-medium p-8">
       <motion.h2
         initial={{ opacity: 0, y: -30 }}
         animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: -30 }}
         transition={{ duration: 1, ease: "linear" }}
-        className="text-3xl sm:text-5xl lg:text-6xl text-center tracking-wider"
+        className="text-3xl sm:text-5xl md:text-6xl text-center tracking-wider"
         id="skills"
       >
         Skills
@@ -51,7 +51,7 @@ const Skills = () => {
                   <img
                     src={skill.image}
                     alt={skill.name}
-                    className="w-20 h-20 sm:w-16 sm:h-24 md:w-20 md:h-20 lg:w-24 lg:h-24 object-contain" // Responsive image sizes
+                    className="w-20 h-20 sm:w-16 sm:h-24 md:w-20 md:h-20 md:w-24 md:h-24 object-contain" // Responsive image sizes
                   />
                 </motion.div>
               ))}
