@@ -10,7 +10,6 @@ import simpleinterest from "../assets/SimpleInterest.png"
 
 
 export const navItems = [
-  { label: "About", href: "#about" },
   { label: "Skills", href: "#skills" },
   { label: "Projects", href: "#projects" },
   { label: "Experience", href: "#experience" },
@@ -261,19 +260,9 @@ export const experiences = [
       "Enhanced application performance and security by integrating JWT for user authentication, reducing security incidents by 30%.",
       "Implemented responsive design principles to ensure the application functions well on both desktop and mobile devices.",
     ],
-    skills: ["React.js", "Axios", "JWT", "Responsive Design"],
+    skills: ["React.js", "Axios", "JWT", "Redux","Node Js","Express Js","Mongo DB","Angular","Html","CSS","Js","Bootsrap","Media Query"],
   },
-  {
-    role: "Software Developer Engineer",
-    company: "Open Sense Labs",
-    duration: "July 2023 - Present",
-    location: "Remote",
-    responsibilities: [
-      "Spearheaded front-end development efforts within a collaborative team environment.",
-      "Implemented backend logic to optimize data processing, reducing response times by 25%.",
-    ],
-    skills: ["JavaScript", "React.js", "Next.js", "Node.js", "MongoDB"],
-  },
+  
 ];
 
 

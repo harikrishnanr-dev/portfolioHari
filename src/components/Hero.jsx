@@ -5,7 +5,7 @@ import UseInView from "../hooks/UseInView";
 const Hero = () => {
     const [ref, inView] = UseInView();
     return (
-        <div className="flex flex-col md:flex-row md:items-center md:justify-between mt-10 md:mt-28 overflow-hidden" id="about">
+        <div className="flex flex-col md:flex-row md:items-center md:justify-between mt-10 md:mt-10 md:p-10 overflow-hidden">
             <div className="md:w-1/2 text-center md:text-start" >
                 <motion.h1
                     ref={ref}
@@ -16,8 +16,8 @@ const Hero = () => {
                     Hello, I'm<br />
                     <span className="bg-gradient-to-r from-orange-500 to-orange-800 text-transparent bg-clip-text">Harikrishnan</span>
                 </motion.h1>
-                <p className="mt-2 md:mt-10 text-base text-neutral-500 max-w-4xl  p-5 md:px-0 text-justify">
-                    I am a passionate full-stack developer with a strong focus on building robust and scalable web applications. With 6 months of hands-on experience, I have sharpened my skills in front-end technologies like React and back-end technologies such as Node.js, MySQL, and MongoDB.
+                <p className="mt-4 md:mt-8 lg:mt-10 text-base text-neutral-500 max-w-4xl p-4 md:p-0 lg:px-0 text-justify">
+                I am a passionate full-stack developer with a strong focus on building robust and scalable web applications. With 6 months of hands-on experience, I have sharpened my skills in front-end technologies like React and back-end technologies such as Node.js, MySQL, and MongoDB.
                     My goal is to leverage my expertise to create innovative solutions that drive business growth and deliver exceptional user experiences.
                 </p>
 

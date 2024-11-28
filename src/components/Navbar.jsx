@@ -20,7 +20,7 @@ const Navbar = () => {
                     </ul>
                     <div className="hidden md:flex justify-center items-center ml-10 space-x-10">
                         <a href="https://github.com/harikrishnanr-dev" target="_blank" className="py-2 px-3 border rounded-md">Github</a>
-                        <a href="#" className=" bg-gradient-to-r from-orange-500 to-orange-800 py-2 px-3 border rounded-md">Resume</a>
+                        <a href="https://drive.google.com/file/d/1eifTX_pWSoVUnyqoxpIJuDwYqEO_mXgR/view?usp=sharing" target="_blank" className=" bg-gradient-to-r from-orange-500 to-orange-800 py-2 px-3 border rounded-md">Resume</a>
 
                     </div>
                     <div className="md:hidden md-flex flex-col justify-end">

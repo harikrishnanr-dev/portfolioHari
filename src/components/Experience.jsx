@@ -7,24 +7,22 @@ const Experience = () => {
   const [ref, inView] = UseInView();
 
   return (
-    <motion.div
-      ref={ref}
-      className="md:mt-5 md:p-0 font-medium">
-      <motion.h2
+    <div className="md:p-0 font-medium p-5" id="experience">
+    <motion.h2
+        ref={ref}
         initial={{ opacity: 0, y: -30 }}
         animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: -30 }}
         transition={{ duration: 1, ease: "linear" }}
         className="text-3xl sm:text-5xl md:text-6xl text-center tracking-wider"
-        id="experience"
-      >
+    >
         Experience
-      </motion.h2>
+    </motion.h2>
 
       <div className="flex flex-wrap mt-2 justify-center gap-4">
         {experiences.map((exp, index) => (
           <motion.div
             key={index}
-            className="w-full md:p-5 p-8"
+            className="w-full md:p-8 p-8"
             initial={{ opacity: 0, y: 20 }}
             animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
             transition={{ duration: 0.8, delay: index * 0.2 }}
@@ -56,7 +54,7 @@ const Experience = () => {
           </motion.div>
         ))}
       </div>
-    </motion.div>
+    </div>
   );
 };
 
