@@ -271,16 +271,16 @@ export const EXPERIENCES = [
 ];
 
 
-export const EDUCATION = [
-  {
-    role: "Bachelor of Science in Computer Science",
-    company: "STAS Edappally College",
-    duration: "2018 - 2021", 
-    location: "Kerala, India",
-    responsibilities: [
-      "Studied core computer science subjects including Data Structures, Algorithms, and Software Development.",
-      "Completed projects in web development",
-    ],
-    skills: ["HTML", "CSS", "JavaScript", "Php","Python", "C++", "C"],
-  },
-];
+// export const EDUCATION = [
+//   {
+//     role: "Bachelor of Science in Computer Science",
+//     company: "STAS Edappally College",
+//     duration: "2018 - 2021", 
+//     location: "Kerala, India",
+//     responsibilities: [
+//       "Studied core computer science subjects including Data Structures, Algorithms, and Software Development.",
+//       "Completed projects in web development",
+//     ],
+//     skills: ["HTML", "CSS", "JavaScript", "Php","Python", "C++", "C"],
+//   },
+// ];
