@@ -39,7 +39,7 @@ const Skills = () => {
                     y: inView ? (skillIndex % 2 === 0 ? 10 : -10) : 0,
                   }}
                   transition={{
-                    duration: 1.5,
+                    duration: 0.8,
                     repeat: Infinity,
                     repeatType: "reverse",
                     ease: "easeInOut",
