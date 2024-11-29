@@ -1,6 +1,6 @@
 import { X } from "lucide-react";
 import { useState } from "react";
-import { projects } from "../constants";
+import { PROJECTS } from "../constants/constants";
 import UseInView from "../hooks/UseInView";
 import { motion } from "framer-motion";
 const Projects = () => {
@@ -24,7 +24,7 @@ const Projects = () => {
             Projects
         </motion.h2>
         <div className="flex flex-wrap sm:p-8 md:p-4 lg:p-5 mt-5">
-    {projects.map((project, index) => (
+    {PROJECTS.map((project, index) => (
         <motion.div
             key={index}
             className="w-full sm:w-1/2 lg:w-1/3 p-5"

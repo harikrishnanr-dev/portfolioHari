@@ -1,5 +1,5 @@
 import React from "react";
-import { skills } from "../constants";
+import { SKILLS } from "../constants/constants";
 import UseInView from "../hooks/UseInView";
 import { motion } from "framer-motion";
 
@@ -29,7 +29,7 @@ const Skills = () => {
         >
           <div className="p-5 mt-2 border border-neutral-700 rounded-xl">
             <div className="flex flex-wrap justify-center gap-4"> 
-              {skills.flatMap((category) => category.skills).map((skill, skillIndex) => (
+              {SKILLS.flatMap((category) => category.skills).map((skill, skillIndex) => (
                 <motion.div
                   key={skillIndex}
                   className="flex items-center border rounded-lg p-3 justify-center" 

@@ -1,5 +1,5 @@
 import { Menu, X } from "lucide-react"
-import { navItems } from "../constants";
+import { NAVITEMS } from "../constants/constants";
 import { useState } from "react";
 const Navbar = () => {
     const [mobileDrawerOpen, setMobileDrawerOpen] = useState(false);
@@ -14,7 +14,7 @@ const Navbar = () => {
                         <h1 className="text-2xl tracking-tight text-green-400">Harikrishnan R</h1>
                     </div>
                     <ul className="hidden md:flex space-x-12 ml-auto">
-                        {navItems.map((item, index) => (
+                        {NAVITEMS.map((item, index) => (
                             <li key={index}><a href={item.href}>{item.label}</a></li>
                         ))}
                     </ul>
@@ -30,7 +30,7 @@ const Navbar = () => {
                 {mobileDrawerOpen && (
                     <div className="fixed right-0 z-20 bg-neutral-900 w-full p-12 flex flex-col justify-center items-center md:hidden">
                         <ul>
-                        {navItems.map((item, index) => (
+                        {NAVITEMS.map((item, index) => (
                             <li key={index} className="py-4"><a href={item.href}>{item.label}</a></li>
                         ))}
                         </ul>

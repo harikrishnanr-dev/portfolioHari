@@ -18,7 +18,7 @@ const Hero = () => {
                 </motion.h1>
                 <p className="mt-4 md:mt-8 lg:mt-10 text-base text-neutral-500 max-w-4xl p-4 md:p-0 lg:px-0 text-justify">
                 I am a passionate full-stack developer with a strong focus on building robust and scalable web applications. With 6 months of hands-on experience, I have sharpened my skills in front-end technologies like React and back-end technologies such as Node.js, MySQL, and MongoDB.
-                    My goal is to leverage my expertise to create innovative solutions that drive business growth and deliver exceptional user experiences.
+                    My goal is to leverage my expertise to create innovative solutions that drive business growth and deliver exceptional user EXPERIENCES.
                 </p>
 
 

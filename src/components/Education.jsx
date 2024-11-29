@@ -1,7 +1,7 @@
 import React from "react";
-import { education } from "../constants";
 import { motion } from "framer-motion";
 import UseInView from "../hooks/UseInView";
+import { EDUCATION } from "../constants/constants";
 function Education(){
   const [ref, inView] = UseInView();
 
@@ -18,7 +18,7 @@ function Education(){
     </motion.h2>
 
       <div className="flex flex-wrap mt-2 justify-center gap-4">
-        {education.map((education, index) => (
+        {EDUCATION.map((EDUCATION, index) => (
           <motion.div
             key={index}
             ref={ref}
@@ -29,19 +29,19 @@ function Education(){
           >
             <div className="p-5 mt-2 border border-neutral-700 rounded-xl">
               <h3 className="text-sm md:text-lg font-semibold">
-                {education.role} -{" "}
-                <span className="text-purple-500">{education.company}</span>
+                {EDUCATION.role} -{" "}
+                <span className="text-purple-500">{EDUCATION.company}</span>
               </h3>
               <p className="text-sm text-neutral-400">
-                {education.duration} | {education.location}
+                {EDUCATION.duration} | {EDUCATION.location}
               </p>
               <ul className="mt-2 list-disc list-inside text-neutral-400">
-                {education.responsibilities.map((task, idx) => (
+                {EDUCATION.responsibilities.map((task, idx) => (
                   <li key={idx}>{task}</li>
                 ))}
               </ul>
               <div className="flex flex-wrap gap-2 mt-4">
-                {education.skills.map((skill, idx) => (
+                {EDUCATION.skills.map((skill, idx) => (
                   <span
                     key={idx}
                     className="rounded bg-neutral-900 px-2 py-1 text-sm font-medium text-purple-500"

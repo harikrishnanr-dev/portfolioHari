@@ -9,14 +9,14 @@ import restaurant from "../assets/Restaurant.png"
 import simpleinterest from "../assets/SimpleInterest.png"
 
 
-export const navItems = [
+export const NAVITEMS = [
   { label: "Skills", href: "#skills" },
   { label: "Projects", href: "#projects" },
   { label: "Experience", href: "#experience" },
   { label: "Education", href: "#education" },
 ];
 
-export const skills = [
+export const SKILLS = [
   {
     title: "Frontend",
     skills: [
@@ -117,7 +117,7 @@ export const skills = [
   },
 ];
 
-export const projects = [
+export const PROJECTS = [
   {
     id: 1,
     title: "Media Player",
@@ -244,7 +244,7 @@ export const projects = [
 ];
 
 
-export const experiences = [
+export const EXPERIENCES = [
   {
     role: "MERN Stack Development Intern",
     company: "Luminar Technolab",
@@ -261,7 +261,7 @@ export const experiences = [
 ];
 
 
-export const education = [
+export const EDUCATION = [
   {
     role: "Bachelor of Science in Computer Science",
     company: "STAS Edappally College",

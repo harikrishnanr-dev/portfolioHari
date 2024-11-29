@@ -1,5 +1,5 @@
 import React from "react";
-import { experiences } from "../constants";
+import { EXPERIENCES } from "../constants/constants";
 import { motion } from "framer-motion";
 import UseInView from "../hooks/UseInView";
 
@@ -19,7 +19,7 @@ const Experience = () => {
     </motion.h2>
 
       <div className="flex flex-wrap mt-2 justify-center gap-4">
-        {experiences.map((experience, index) => (
+        {EXPERIENCES.map((experience, index) => (
           <motion.div
             key={index}
             ref={ref}
