@@ -56,7 +56,7 @@ const Projects = () => {
                     alt={project.title}
                 />
                 <div className="flex flex-wrap mt-5 justify-between">
-                    {project.tags?.map((tag, index) => (
+                    {project.tags?.slice(0,4).map((tag, index) => (
                         <h6
                             key={index}
                             className="border border-blue-700 text-sm rounded-lg p-1 mt-3 text-blue-400"

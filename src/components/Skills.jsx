@@ -9,7 +9,8 @@ const Skills = () => {
   return (
     <motion.div
       ref={ref}
-      className="md:mt-5 md:p-0 font-medium p-8">
+      className="md:mt-5 md:p-0 font-medium p-8"
+    >
       <motion.h2
         initial={{ opacity: 0, y: -30 }}
         animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: -30 }}
@@ -22,24 +23,20 @@ const Skills = () => {
 
       <div className="flex flex-wrap mt-2 justify-center gap-4">
         <motion.div
-          className="w-full p-10"
+          className="w-full p-2 lg:p-10"
           initial={{ opacity: 0 }}
           animate={inView ? { opacity: 1 } : { opacity: 0 }}
           transition={{ duration: 1 }}
         >
           <div className="p-5 mt-2 border border-neutral-700 rounded-xl">
-            <div className="flex flex-wrap justify-center gap-4"> 
+            <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 gap-4">
               {SKILLS.flatMap((category) => category.skills).map((skill, skillIndex) => (
                 <motion.div
                   key={skillIndex}
-                  className="flex items-center border rounded-lg p-3 justify-center" 
+                  className="flex items-center border rounded-lg p-4 justify-center"
                   initial={{ y: 0 }}
                   animate={{
-                    y: inView
-                      ? skillIndex % 2 === 0 
-                        ? 10
-                        : -10 
-                      : 0,
+                    y: inView ? (skillIndex % 2 === 0 ? 10 : -10) : 0,
                   }}
                   transition={{
                     duration: 1.5,
@@ -51,7 +48,7 @@ const Skills = () => {
                   <img
                     src={skill.image}
                     alt={skill.name}
-                    className="w-20 h-20 sm:w-16 sm:h-24 md:w-20 md:h-20 lg:w-24 lg:h-24 object-contain" // Responsive image sizes
+                    className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 lg:w-28 lg:h-28 object-contain"
                   />
                 </motion.div>
               ))}

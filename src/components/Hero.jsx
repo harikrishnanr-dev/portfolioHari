@@ -5,7 +5,7 @@ import UseInView from "../hooks/UseInView";
 const Hero = () => {
     const [ref, inView] = UseInView();
     return (
-        <div className="flex flex-col md:flex-row md:items-center md:justify-between mt-10 md:mt-10 md:p-10 overflow-hidden">
+        <div className="flex flex-col md:flex-row md:items-center md:justify-between mt-10 md:mt-10 md:p-10 overflow-hidden p-5">
             <div className="md:w-1/2 text-center md:text-start" >
                 <motion.h1
                     ref={ref}
