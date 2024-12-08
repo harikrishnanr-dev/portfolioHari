@@ -1,12 +1,13 @@
 import { motion } from "framer-motion";
 import hero from "../assets/hero.mp4";
 import UseInView from "../hooks/UseInView";
-
+import React from 'react';
+import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 const Hero = () => {
     const [ref, inView] = UseInView();
     return (
         <div className="flex flex-col md:flex-row md:items-center md:justify-between mt-10 md:mt-10 md:p-10 overflow-hidden p-5">
-           {/* left Section  */}
+            {/* left Section  */}
             <div className="md:w-1/2 text-center md:text-start" >
                 <motion.h1
                     ref={ref}
@@ -41,19 +42,29 @@ const Hero = () => {
 
             {/* right section */}
             <motion.div
-                ref={ref}
-                initial={{ opacity: 0, x: 80 }}
-                animate={inView ? { opacity: 1, x: 0 } : { opacity: 0, x: 80 }}
-                transition={{ duration: 1, ease: "linear" }}
-                className=" flex justify-center md:justify-end mt-5 md:mt-0">
-                <video autoPlay loop muted className="rounded-lg w-96 md:w-3/4 border border-neutral-700 shadow-orange-400">
-                    <source src={hero} type="video/mp4" />
-                    Your Browser Does Not Support
-                </video>
-            </motion.div>
+    ref={ref}
+    initial={{ opacity: 0, x: 80 }}
+    animate={inView ? { opacity: 1, x: 0 } : { opacity: 0, x: 80 }}
+    transition={{ duration: 1, ease: "linear" }}
+    className="flex justify-center md:justify-end mt-5 md:mt-0"
+>
+    <DotLottieReact
+        src="https://lottie.host/5c608f77-4d34-41a2-82e5-1d6dd848c5c0/fnBv6GRuqf.lottie"
+        loop
+        autoplay
+        style={{ width: "480px", height: "480px" }} // Add inline styles for size control
+    />
+</motion.div>
+
         </div>
 
     );
 };
 
 export default Hero;
+
+
+
+
+
+
